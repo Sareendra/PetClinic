@@ -1,11 +1,12 @@
 package com.PetCareClinic.entity;
 
-import org.springframework.data.annotation.Persistent;
 import org.springframework.stereotype.Component;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import lombok.Data;
 
 @Entity
@@ -14,13 +15,15 @@ import lombok.Data;
 public class Client {
 	
 	
-	@Persistent
+	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
-	private String name;
-	private String email;
-	private String contact;
-	private String address;
+	private int clientId;
+	private String clientName;
+	private String clientEmail;
+	private String clientContact;
+	private String clientAddress;
 
+//	@OneToMany
+//	VisitHistory listHistory;
 
 }

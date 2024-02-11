@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 import jakarta.persistence.Entity;
 import lombok.Data;
 
-@Entity
+
 @Component
 @Data
 public class Service {
