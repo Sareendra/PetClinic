@@ -12,7 +12,7 @@ import com.PetCareClinic.entity.Admin;
 import com.PetCareClinic.repo.AdminRepo;
 
 @Service
-public class AdminService {
+public class Admin_Service {
 	
 	@Autowired
 	AdminDao aDao;

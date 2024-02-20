@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.PetCareClinic.Util.PetResponseStructure;
 import com.PetCareClinic.entity.Client;
-import com.PetCareClinic.service.ClientService;
+import com.PetCareClinic.service.Client_Service;
 
 
 @RestController
@@ -24,7 +24,7 @@ import com.PetCareClinic.service.ClientService;
 public class ControllerClient {
 	
 	@Autowired
-	ClientService service;
+	Client_Service service;
 
 	
 	

@@ -13,7 +13,7 @@ import com.PetCareClinic.entity.Client;
 import com.PetCareClinic.repo.ClientRepo;
 
 @Service
-public class ClientService {
+public class Client_Service {
 	
 	@Autowired
 	ClientDao sDao;

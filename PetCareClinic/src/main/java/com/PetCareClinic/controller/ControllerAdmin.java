@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.PetCareClinic.Util.PetResponseStructure;
 import com.PetCareClinic.dto.AdminDto;
 import com.PetCareClinic.entity.Admin;
-import com.PetCareClinic.service.AdminService;
+import com.PetCareClinic.service.Admin_Service;
 
 @RestController
 @RequestMapping("petcare_admin")
@@ -22,7 +22,7 @@ import com.PetCareClinic.service.AdminService;
 public class ControllerAdmin {
 	
 	@Autowired
-	AdminService service;
+	Admin_Service service;
 	
 	@PostMapping
 	public ResponseEntity<PetResponseStructure<Admin>> saveAdmin(@RequestBody Admin admin){
